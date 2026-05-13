@@ -1,0 +1,22 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+
+@layer base {
+  * { @apply border-gray-800; }
+  body { font-family: 'Inter', sans-serif; }
+
+  .game-card {
+    @apply bg-[#16213e] border border-[#0f3460] rounded-xl p-4 transition-all duration-200;
+  }
+  .game-card:hover {
+    @apply border-[#6366f1]/50 shadow-lg shadow-[#6366f1]/10;
+  }
+  .btn-primary {
+    @apply bg-gradient-to-r from-[#6366f1] to-[#4f46e5] text-white font-semibold px-6 py-2.5 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-[#6366f1]/30 active:scale-95;
+  }
+  .btn-ghost {
+    @apply text-gray-300 hover:text-white hover:bg-white/10 px-4 py-2 rounded-lg transition-all duration-200;
+  }
+  .xp-bar {
+    @apply h-2 rounded-full bg-gradient-to-r from-[#6366f1] to-[#818cf8];
+  }
+}
